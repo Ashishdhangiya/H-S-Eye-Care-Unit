@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.S. EYE CARE UNIT</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+    /* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/salaar\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header styles */
+header {
+    background-color: transparent;
+    padding: 10px;
+    position: relative; /* Position relative for absolute positioning of mobile menu button */
+}
+
+.logo {
+    height: auto;
+    max-width: 100%;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end; /* Align navigation to the right on desktop */
+}
+
+.navigation li {
+    margin-right: 1em;
+}
+
+/* Mobile menu button styles */
+.toggle-menu {
+    display: none; /* Hide the button by default on desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Social media icons */
+.social img {
+    width: 30px;
+    margin: 0 5px; /* Add space between social media icons */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .navigation {
+        display: none; /* Hide navigation on mobile by default */
+        flex-direction: column; /* Stack navigation items vertically */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .navigation li {
+        margin: 10px 0; /* Add space between navigation items */
+    }
+
+    .toggle-menu {
+        display: block; /* Show toggle button on mobile */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .content {
+        margin-top: 50px; /* Add space for fixed navigation */
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div class="a">
+            <img src="img/cropped.png" alt="logo" class="logo">
+            <button class="toggle-menu">&#9776;</button> <!-- Button for mobile menu -->
+        </div>
+        <ul class="navigation">
+            <li><a href="for_home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="bota">
+            <h1>Your Vision, Our First Priority!!</h1>
+            <h2>The best optician in Thana Bhawan, free eye check-up. Variety of glasses and sunglasses.</h2>
+            <button class="appointment"><a href="log_in_page.html">Book an Appointment!</a></button>
+        </div>
+    </div>
+    <footer>
+        <h1>Thank you for choosing us</h1>
+        <div class="social">
+            <a href="https://www.instagram.com/harun.khan.733450?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="https://www.transparentpng.com/thumb/logo-instagram/orzG9u-instagram-picture-logo-png.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/harun.khan.733450?mibextid=ZbWKwL" target="_blank"><img src="https://www.transparentpng.com/thumb/facebook-logo/facebook-icon-transparent-background-20.png" alt="Facebook"></a>
+            <a href="www.youtube.com" target="_blank"><img src="https://www.transparentpng.com/thumb/youtube/tube-you-youtube-flurry-icon-png-20.png" alt="Youtube"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Link to external JavaScript file for mobile menu functionality -->
+</body>
+</html>
